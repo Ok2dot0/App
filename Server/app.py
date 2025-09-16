@@ -136,6 +136,7 @@ def post_message():
     # Save to database
     with sqlite3.connect("messages.db") as conn:
         cursor = conn.cursor()
+        print("Saving message to DB:", message)
         cursor.execute("INSERT INTO messages (content) VALUES (?)", (message,))
         conn.commit()
     return jsonify({"ok": True, "message": message}), 201
@@ -146,3 +147,5 @@ if __name__ == "__main__":
     app.run(host="0.0.0.0", port=3000)
     #on exit, close the db connection
     cursor.close()
+
+print("DB connection closed")
