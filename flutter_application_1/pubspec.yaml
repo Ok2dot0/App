@@ -13,6 +13,7 @@ dependencies:
   provider: ^6.1.5
   http: ^1.2.2
   gap: ^3.0.1
+  shared_preferences: ^2.5.3
 
 dev_dependencies:
   flutter_test:
