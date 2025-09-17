@@ -1,7 +1,7 @@
-name: namer_app
-description: "A new Flutter project."
+name: cycle_calendar
+description: "A menstrual cycle tracking and prediction app"
 publish_to: 'none'
-version: 0.1.0
+version: 1.0.0
 
 environment:
   sdk: ^3.8.0
@@ -18,7 +18,8 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  flutter_lints: ^5.0.0
+  flutter_lints: ^6.0.0
+  flutter_launcher_icons: ^0.14.4
 
 flutter:
   uses-material-design: true
